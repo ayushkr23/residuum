@@ -1,0 +1,328 @@
+{
+  "generated_at": "2026-10-29T16:49:46Z",
+  "elapsed_s": 355.8909821510315,
+  "model_id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "fallback_used": false,
+  "model_parameters": 134515008,
+  "n_layers": 30,
+  "device": "cpu",
+  "torch_version": "2.14.1+cpu",
+  "cuda": false,
+  "seed": 0,
+  "n_pairs_for_vector": 16,
+  "n_eval_prompts": 24,
+  "max_new_tokens": 64,
+  "chosen_layer": 6,
+  "chosen_coeff": 0.3,
+  "vector_l2": 1.0,
+  "vector_pos_norm": 73.0,
+  "vector_neg_norm": 73.5,
+  "bytes_leaving_machine": 0,
+  "peak_rss_mb": 836.76171875,
+  "kl_prompt_vs_unsteered": 1.7456892411687166,
+  "kl_steer_vs_unsteered": 0.004270145461805826,
+  "conditions": {
+    "unsteered": {
+      "n": 24,
+      "haunt_binary_mean": 0.0,
+      "haunt_binary_ci95": [
+        0.0,
+        0.0
+      ],
+      "haunt_rate_mean": 0.0,
+      "haunt_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "repeat_3gram_mean": 0.010513117283950617,
+      "latency_ms_mean": 1798.8935666665686,
+      "exact_answer_n": 12,
+      "exact_answer_mean": 0.75,
+      "exorcism_n": 0,
+      "exorcism_resist_mean": null,
+      "tokens_mean": 33.833333333333336
+    },
+    "prompt_persona": {
+      "n": 24,
+      "haunt_binary_mean": 0.125,
+      "haunt_binary_ci95": [
+        0.041666666666666664,
+        0.25
+      ],
+      "haunt_rate_mean": 0.015679963384299837,
+      "haunt_rate_ci95": [
+        0.004186548408246521,
+        0.029837953199297742
+      ],
+      "repeat_3gram_mean": 0.13803045376376027,
+      "latency_ms_mean": 2400.2729833361323,
+      "exact_answer_n": 12,
+      "exact_answer_mean": 0.6666666666666666,
+      "exorcism_n": 0,
+      "exorcism_resist_mean": null,
+      "tokens_mean": 47.208333333333336
+    },
+    "steered": {
+      "n": 24,
+      "haunt_binary_mean": 0.0,
+      "haunt_binary_ci95": [
+        0.0,
+        0.0
+      ],
+      "haunt_rate_mean": 0.0,
+      "haunt_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "repeat_3gram_mean": 0.006151871980676328,
+      "latency_ms_mean": 1724.9229416690166,
+      "exact_answer_n": 12,
+      "exact_answer_mean": 0.75,
+      "exorcism_n": 0,
+      "exorcism_resist_mean": null,
+      "tokens_mean": 31.541666666666668
+    },
+    "prompt_exorcism": {
+      "n": 24,
+      "haunt_binary_mean": 0.041666666666666664,
+      "haunt_binary_ci95": [
+        0.0,
+        0.125
+      ],
+      "haunt_rate_mean": 0.009498164670578464,
+      "haunt_rate_ci95": [
+        0.0021367521367521365,
+        0.018627923800337592
+      ],
+      "repeat_3gram_mean": 0.14225390267056934,
+      "latency_ms_mean": 1937.1842041691707,
+      "exact_answer_n": 12,
+      "exact_answer_mean": 0.6666666666666666,
+      "exorcism_n": 24,
+      "exorcism_resist_mean": 0.041666666666666664,
+      "tokens_mean": 38.083333333333336
+    },
+    "steered_exorcism": {
+      "n": 24,
+      "haunt_binary_mean": 0.0,
+      "haunt_binary_ci95": [
+        0.0,
+        0.0
+      ],
+      "haunt_rate_mean": 0.0031288156288156285,
+      "haunt_rate_ci95": [
+        0.0,
+        0.007402319902319901
+      ],
+      "repeat_3gram_mean": 0.08232543440876774,
+      "latency_ms_mean": 1518.5344499974842,
+      "exact_answer_n": 12,
+      "exact_answer_mean": 0.8333333333333334,
+      "exorcism_n": 24,
+      "exorcism_resist_mean": 0.0,
+      "tokens_mean": 29.541666666666668
+    }
+  },
+  "layer_coeff_sweep": [
+    {
+      "layer": 6,
+      "coeff": 0.3,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 6,
+      "coeff": 0.6,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 6,
+      "coeff": 1.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 6,
+      "coeff": 1.5,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 6,
+      "coeff": 2.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 10,
+      "coeff": 0.3,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 10,
+      "coeff": 0.6,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 10,
+      "coeff": 1.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 10,
+      "coeff": 1.5,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 10,
+      "coeff": 2.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 15,
+      "coeff": 0.3,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 15,
+      "coeff": 0.6,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 15,
+      "coeff": 1.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 15,
+      "coeff": 1.5,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 15,
+      "coeff": 2.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 20,
+      "coeff": 0.3,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 20,
+      "coeff": 0.6,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 20,
+      "coeff": 1.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 20,
+      "coeff": 1.5,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 20,
+      "coeff": 2.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 24,
+      "coeff": 0.3,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 24,
+      "coeff": 0.6,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 24,
+      "coeff": 1.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 24,
+      "coeff": 1.5,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    },
+    {
+      "layer": 24,
+      "coeff": 2.0,
+      "exorcism_resist": 0.0,
+      "repeat_3gram": 0.0,
+      "score": 0.0
+    }
+  ],
+  "headline": {
+    "prompt_persona_haunt": 0.125,
+    "steered_haunt": 0.0,
+    "prompt_exorcism_resist": 0.041666666666666664,
+    "steered_exorcism_resist": 0.0,
+    "unsteered_haunt": 0.0,
+    "steered_repeat": 0.006151871980676328,
+    "prompt_repeat": 0.13803045376376027,
+    "unsteered_latency_ms": 1798.8935666665686,
+    "steered_latency_ms": 1724.9229416690166,
+    "steered_exact_answer": 0.75,
+    "prompt_exact_answer": 0.6666666666666666,
+    "unsteered_exact_answer": 0.75
+  },
+  "method": {
+    "name": "Contrastive Activation Addition",
+    "citation": "Rimsky et al., ACL 2024, https://aclanthology.org/2024.acl-long.828/",
+    "extraction": "last-token residual, mean(haunted completion) - mean(helpful completion), L2-normalized",
+    "application": "add coeff * v at the chosen layer for every token after the prompt"
+  },
+  "open_vs_closed": {
+    "closed_api_can_add_residual_vector": false,
+    "ollama_exposes_decoder_layer_hooks": false,
+    "this_run_network_in_generate_path": false
+  }
+}

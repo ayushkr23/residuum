@@ -1,0 +1,93 @@
+/* Residuum motion tokens. Every duration, ease, and distance in the UI
+   comes from this file. Decorative motion opts in below no-preference. */
+
+@font-face {
+  font-family: "Fraunces Residuum";
+  font-style: normal;
+  font-weight: 560 640;
+  font-display: swap;
+  src: url("fonts/fraunces-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122;
+}
+
+@font-face {
+  font-family: "Outfit Residuum";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("fonts/outfit-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122;
+}
+
+@font-face {
+  font-family: "Plex Residuum";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-400.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122;
+}
+
+@font-face {
+  font-family: "Plex Residuum";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-500.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122;
+}
+
+:root {
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --spring-soft: cubic-bezier(0.22, 1.15, 0.36, 1);
+  --spring-snappy: cubic-bezier(0.2, 1.4, 0.4, 1);
+  --spring-bouncy: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-micro: 160ms;
+  --dur-press: 220ms;
+  --dur-panel: 480ms;
+  --dur-reveal: 700ms;
+  --stagger: 40ms;
+  --lift: 10px;
+  --dust: 14px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 40px;
+  --space-7: 64px;
+  --radius-ticket: 2px;
+  --radius-card: 14px;
+  --radius-round: 999px;
+  --font-display: "Fraunces Residuum", Palatino, "Palatino Linotype", Georgia, serif;
+  --font-body: "Outfit Residuum", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Plex Residuum", ui-monospace, "Cascadia Code", Consolas, monospace;
+  --bg: #100c14;
+  --surface: #1c1724;
+  --ink: #f4ecdf;
+  --muted: #c4b5a6;
+  --accent: #f0b45a;
+  --marigold: #e8872a;
+  --spectral: #b7ebe4;
+  --danger: #d4654e;
+  --line: rgba(244, 236, 223, 0.14);
+  --glow: 0 0 24px rgba(240, 180, 90, 0.28);
+  --contact: 0 16px 24px rgba(0, 0, 0, 0.28);
+  color-scheme: dark;
+}
+
+html[data-theme="paper"] {
+  --bg: #efe4d2;
+  --surface: #f7f1e6;
+  --ink: #241c16;
+  --muted: #5e534c;
+  --accent: #b86a12;
+  --marigold: #c46a14;
+  --spectral: #1d6f68;
+  --danger: #9c3b2e;
+  --line: rgba(36, 28, 22, 0.14);
+  --glow: 0 0 18px rgba(184, 106, 18, 0.22);
+  --contact: 0 14px 20px rgba(70, 48, 20, 0.12);
+  color-scheme: light;
+}
